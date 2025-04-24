@@ -198,7 +198,11 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         let track = tracks[indexPath.item]
         
         // Always load album image
-        cell.albumImageView.loadImage(from: track.albumArtURL.absoluteString)
+        cell.albumImageView.loadImage(from: track.albumArtURL.absoluteString) { image in
+            if let image = image, indexPath.item == self.tracks.firstIndex(where: { $0.id == self.lastTrackID }) {
+                self.updateBackgroundColor(with: image)
+            }
+        }
 
         // Clear all labels first
         cell.configureLabels(title: "", album: "", artist: "")
