@@ -6,6 +6,7 @@
 2. [Product Spec](#product-spec)
 3. [Wireframes](#wireframes)
 4. [Schema](#schema)
+5. [Demo](#demo)
 
 ## Overview
 
@@ -67,7 +68,7 @@ This app displays the currently playing song and upcoming tracks from your Spoti
 
 ## Wireframes
 
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![Wireframe](wireframe.jpeg)
 
 ### [BONUS] Digital Wireframes & Mockups
 *To be added later — current prototype built directly in Xcode.*
@@ -98,3 +99,13 @@ This app displays the currently playing song and upcoming tracks from your Spoti
 - **User’s Queue (GET)**  
   `https://api.spotify.com/v1/me/player/queue`  
   Used to show the next song(s).
+
+## DEMO
+
+<div>
+    <a href="https://www.loom.com/share/25785a9613894c32a0fb3e6439e41990">
+    </a>
+    <a href="https://www.loom.com/share/25785a9613894c32a0fb3e6439e41990">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/25785a9613894c32a0fb3e6439e41990-3808c30f5f7ac258-full-play.gif">
+    </a>
+  </div>

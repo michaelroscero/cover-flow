@@ -61,6 +61,7 @@ class ViewController: UIViewController {
         coverFlowView.delegate = self
         coverFlowView.backgroundColor = .clear
 
+        SpotifyAuthManager.shared.startSpotifyLogin()
         if UserDefaults.standard.string(forKey: "access_token") == nil {
             SpotifyAuthManager.shared.startSpotifyLogin()
         } else {
